@@ -12,7 +12,7 @@ server.listen(3000);
 
 app.get('/',function(req, res){
 	res.sendFile(__dirname + '/index.html');
-});
+	});
 	//Connecting to socket.io
 	io.sockets.on('connection', function(socket){
 	connections.push(socket);
